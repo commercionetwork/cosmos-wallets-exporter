@@ -14,5 +14,9 @@ COPY . /app
 # Execute make install
 RUN make install
 
+# Execute make install
+RUN make build
+
+
 # Command to run the application
-CMD [ "cosmos-wallets-exporter" ]
+CMD [ "/app/cosmos-wallets-exporter" ]
