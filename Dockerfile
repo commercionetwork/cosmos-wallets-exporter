@@ -15,4 +15,4 @@ COPY . /app
 RUN make install
 
 # Command to run the application
-CMD [ "cosmos-wallets-exporter", "--config config/config.toml" ]
+CMD [ "cosmos-wallets-exporter" ]
