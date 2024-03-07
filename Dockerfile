@@ -17,9 +17,9 @@ RUN make install
 # Execute make install
 RUN make build
 
-ARG CONFI_DIR=/config
-RUN mkdir -p ${CONFI_DIR}
-VOLUME [${CONFI_DIR}]
+ARG CONFIG_DIR=/app/config
+RUN mkdir -p ${CONFCONFIG_DIRI_DIR}
+VOLUME [${CONFIG_DIR}]
 
 
 # Command to run the application
