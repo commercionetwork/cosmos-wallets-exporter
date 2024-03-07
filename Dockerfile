@@ -17,6 +17,10 @@ RUN make install
 # Execute make install
 RUN make build
 
+ARG CONFI_DIR=/config
+RUN mkdir -p ${CONFI_DIR}
+VOLUME [${CONFI_DIR}]
+
 
 # Command to run the application
 CMD [ "/app/cosmos-wallets-exporter" ]
